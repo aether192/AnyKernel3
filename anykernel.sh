@@ -4,17 +4,19 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=MigoKernel by migolxlr
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-device.name4=tuna
-device.name5=
+device.name1=renoir
+device.name2=renoir_tw
+device.name3=renoir_eea
+device.name4=renoir_cn
+device.name5=renoir_jp
+device.name6=renoir_ru
+device.name7=renoir_global
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
@@ -29,8 +31,8 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
-IS_SLOT_DEVICE=0;
+BLOCK=/dev/block/bootdevice/by-name/boot;
+IS_SLOT_DEVICE=1;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
 
